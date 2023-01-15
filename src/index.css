@@ -1,13 +1,82 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&family=Josefin+Sans:wght@400;700&family=League+Spartan:wght@500;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@400;500;600;800&family=Poppins:wght@200;300;400;600;700&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-x: hidden;
+  background: var(--Very-Dark-Blue);
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  /* Primary */
+
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient(hsl(192, 100%, 67%) to hsl(280, 87%, 65%));
+
+  /* Light Theme */
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+#light {
+  /* Light Theme */
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+}
+
+#dark {
+  /* Dark Theme */
+
+  --Very-Light-Gray: hsl(235, 21%, 11%);
+  --Very-Light-Grayish-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+/* Container */
+.container {
+  width: 70%;
+  margin: auto;
+  color: var(--Very-Light-Gray);
+}
+
+/* Media Query(Tablet) */
+
+@media (max-width: 1100px) {
+  .container {
+    width: 75%;
+  }
+}
+
+/* Media Query(Mobile) */
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
 }
